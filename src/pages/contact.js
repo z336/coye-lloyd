@@ -30,8 +30,8 @@ export default function Contact() {
               src="../images/coye-contact.jpg"
               alt="A picture of Coye Lloyd"
               placeholder="blurred"
+              formats={['AUTO', 'WEBP', 'AVIF']}
               layout="fullWidth"
-              style={{ maxHeight: 800 }}
             />
             <small>
               <FaCamera /> Jes Nijjer

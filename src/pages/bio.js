@@ -29,8 +29,8 @@ export default function Bio() {
               src="../images/coye-bio.jpg"
               alt="A picture of Coye Lloyd"
               placeholder="blurred"
+              formats={['AUTO', 'WEBP', 'AVIF']}
               layout="fullWidth"
-              style={{ maxHeight: 800 }}
             />
             <small>
               <FaCamera /> Jes Nijjer

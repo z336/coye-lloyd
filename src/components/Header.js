@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   padding-top: 2.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid;
-  @media (max-width: 800px) {
+  @media (max-width: var(--breakpoint)) {
     padding-top: 1rem;
   }
   .site-name {
@@ -23,7 +23,7 @@ const StyledHeader = styled.header`
     a {
       text-decoration: none;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       padding-bottom: 1rem;
     }
   }

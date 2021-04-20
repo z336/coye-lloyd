@@ -5,7 +5,7 @@ const ArticleHeader = styled.header`
   padding-bottom: var(--vertical-space);
   border-bottom: 1px solid;
   div {
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       margin-left: var(--gutter);
       margin-right: var(--gutter);
     }

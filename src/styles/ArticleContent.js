@@ -26,7 +26,10 @@ const Article = styled.article`
     :nth-child(even) {
       margin-left: 6rem;
     }
-    @media (max-width: 800px) {
+    :last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 900px) {
       margin-left: 0;
       margin-right: 0;
       padding-top: var(--vertical-space);
@@ -49,7 +52,7 @@ const Article = styled.article`
     :last-child {
       border-right: 0;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       margin-left: 0;
       margin-right: 0;
       padding-top: var(--vertical-space);
