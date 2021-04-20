@@ -12,17 +12,8 @@ const StyledArticle = styled(Article)`
   opacity: 1;
   background-image: radial-gradient(var(--black) 1px, var(--light) 1px);
   background-size: 0.75rem 0.75rem;
-`;
-
-const BlogGrid = styled(Grid)`
-  background-color: var(--light);
-  padding: var(--gutter);
-  border-bottom: 1px solid;
-  :first-child {
-    border-top: 1px solid;
-  }
-  :last-child {
-    margin-bottom: 0;
+  a {
+    text-decoration: none;
   }
 `;
 
@@ -37,22 +28,24 @@ export default function Blog({ data }) {
       </ArticleHeader>
       <StyledArticle>
         {posts.map((post) => (
-          <BlogGrid
+          <Grid
             className="featured"
             key={post.id}
-            columns="2"
+            columns="1"
             columnSize="1fr"
             gap="2rem"
           >
             <div>
-              <Link to={post.fields.slug}>
+              <Link to={post.fields.slug} tabIndex="-1">
                 <h3>{post.frontmatter.title}</h3>
               </Link>
             </div>
             <div>
-              <p>{post.excerpt}</p>
+              <Link to={post.fields.slug}>
+                <p>{post.excerpt}</p>
+              </Link>
             </div>
-          </BlogGrid>
+          </Grid>
         ))}
       </StyledArticle>
     </>

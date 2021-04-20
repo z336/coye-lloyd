@@ -8,32 +8,19 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     padding: 0;
     list-style: none;
-    li {
-      .active ::before,
-      :hover::before {
-        visibility: visible;
-        transform: scaleX(1);
+    a {
+      text-decoration: none;
+      background: linear-gradient(currentColor 0 0) var(--p, 0) 100% /
+        var(--d, 0) 2px no-repeat;
+      transition: 0.1s, background-position 0s 0.1s;
+      :hover {
+        --d: 100%;
+        --p: 100%;
       }
     }
-    a {
-      position: relative;
-      text-decoration: none;
-      ::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -0.1rem;
-        left: 0;
-        background-color: var(--black);
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.2s ease-in-out 0s;
-      }
-      :hover::before {
-        visibility: visible;
-        transform: scaleX(1);
-      }
+    .active {
+      background: linear-gradient(currentColor 0 0) 100% 100% / 100% 2px
+        no-repeat;
     }
   }
 `;

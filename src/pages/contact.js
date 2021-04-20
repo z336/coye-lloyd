@@ -34,7 +34,7 @@ export default function Contact() {
               style={{ maxHeight: 800 }}
             />
             <small>
-              <FaCamera /> Jess Nijjer
+              <FaCamera /> Jes Nijjer
             </small>
           </div>
           <div className="borders">

@@ -118,8 +118,19 @@ a {
   color: currentColor;
 }
 
+a:focus,
+button:focus {
+  outline: 2px solid;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
 small {
   float: right;
+  padding-top: 1rem;
   svg {
     font-size: 0.6rem;
   }

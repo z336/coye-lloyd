@@ -31,7 +31,7 @@ export default function Bio() {
               style={{ maxHeight: 800 }}
             />
             <small>
-              <FaCamera /> Jess Nijjer
+              <FaCamera /> Jes Nijjer
             </small>
           </div>
           <div className="borders">

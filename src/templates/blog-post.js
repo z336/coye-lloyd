@@ -5,13 +5,12 @@ import Article from '../styles/ArticleContent';
 import ArticleHeader from '../styles/ArticleHeader';
 
 const StyledArticle = styled(Article)`
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
   padding-top: var(--vertical-space);
   padding-bottom: var(--vertical-space);
-  p,
-  ol,
-  ul,
-  img,
-  blockquote {
+  .post {
+    max-width: var(--measure);
     margin-left: auto;
     margin-right: auto;
   }
@@ -27,7 +26,7 @@ export default function BlogPost({ data }) {
         </div>
       </ArticleHeader>
       <StyledArticle>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </StyledArticle>
     </>
   );
