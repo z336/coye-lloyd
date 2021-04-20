@@ -18,7 +18,9 @@ export default function Bio() {
   return (
     <>
       <ArticleHeader>
-        <h2>Bio</h2>
+        <div>
+          <h2>Bio</h2>
+        </div>
       </ArticleHeader>
       <StyledArticle>
         <Grid columns="2" columnSize="1fr" gap="0">
