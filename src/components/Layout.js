@@ -7,7 +7,6 @@ import Footer from './Footer';
 
 const SiteLayout = styled.div`
   min-height: 100vh;
-  /* max-width: 70rem; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;

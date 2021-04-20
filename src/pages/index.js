@@ -29,7 +29,7 @@ export default function IndexPage() {
           </div>
           <div>
             <StaticImage
-              src="../images/coye-index.png"
+              src="../images/coye-index.jpg"
               alt="A picture of Coye Lloyd"
               placeholder="blurred"
               layout="fullWidth"
