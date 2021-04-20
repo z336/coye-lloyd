@@ -7,6 +7,11 @@ import Grid from '../styles/Grid';
 
 const IndexGrid = styled(Grid)`
   padding: var(--gutter);
+  h2 {
+    font-family: var(--display-font);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
 `;
 
 export default function IndexPage() {
