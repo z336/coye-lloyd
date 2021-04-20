@@ -36,14 +36,16 @@ export default function Blog({ data }) {
             gap="2rem"
           >
             <div>
-              <Link to={post.fields.slug} tabIndex="-1">
-                <h3>{post.frontmatter.title}</h3>
-              </Link>
+              <h3>
+                <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+              </h3>
             </div>
             <div>
-              <Link to={post.fields.slug}>
-                <p>{post.excerpt}</p>
-              </Link>
+              <p>
+                <Link to={post.fields.slug} tabIndex="-1">
+                  {post.excerpt}
+                </Link>
+              </p>
             </div>
           </Grid>
         ))}
