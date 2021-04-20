@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import { FaCamera } from 'react-icons/fa';
 import Article from '../styles/ArticleContent';
 import Grid from '../styles/Grid';
 
@@ -28,7 +29,9 @@ export default function IndexPage() {
               placeholder="blurred"
               layout="fullWidth"
             />
-            <small>Jed</small>
+            <small>
+              <FaCamera /> Jedediah Johnson
+            </small>
           </div>
         </IndexGrid>
       </Article>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import { FaCamera } from 'react-icons/fa';
 import ArticleHeader from '../styles/ArticleHeader';
 import Article from '../styles/ArticleContent';
 import Grid from '../styles/Grid';
@@ -29,6 +30,9 @@ export default function Bio() {
               layout="fullWidth"
               style={{ maxHeight: 800 }}
             />
+            <small>
+              <FaCamera /> Jess Nijjer
+            </small>
           </div>
           <div className="borders">
             <h3>About me</h3>

@@ -117,3 +117,10 @@ blockquote {
 a {
   color: currentColor;
 }
+
+small {
+  float: right;
+  svg {
+    font-size: 0.6rem;
+  }
+}

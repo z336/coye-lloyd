@@ -29,6 +29,8 @@ const Article = styled.article`
     @media (max-width: 800px) {
       margin-left: 0;
       margin-right: 0;
+      padding-top: var(--vertical-space);
+      padding-bottom: var(--vertical-space);
       margin-bottom: var(--vertical-space);
       border-left: 0;
       border-right: 0;
@@ -50,6 +52,8 @@ const Article = styled.article`
     @media (max-width: 800px) {
       margin-left: 0;
       margin-right: 0;
+      padding-top: var(--vertical-space);
+      padding-bottom: var(--vertical-space);
       border-left: 0;
       border-right: 0;
       :not(:first-child) {
