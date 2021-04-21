@@ -41,8 +41,6 @@ export default function Blog({ data }) {
               <h3>
                 <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
               </h3>
-            </div>
-            <div>
               <p>
                 <Link to={post.fields.slug} tabIndex="-1">
                   {post.excerpt}
