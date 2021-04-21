@@ -20,9 +20,19 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,6 +56,14 @@ module.exports = {
         path: `./src/blog/`,
       },
       __key: `blog`,
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: 'blog-images',
+      },
+      __key: `blog-images`,
     },
   ],
 };
