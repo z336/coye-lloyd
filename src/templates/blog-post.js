@@ -1,6 +1,6 @@
 import * as React from 'react';
 import HelmetTemplate from '../components/SEO';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Article from '../styles/ArticleContent';
 import ArticleHeader from '../styles/ArticleHeader';
@@ -10,10 +10,17 @@ const StyledArticle = styled(Article)`
   margin-left: var(--gutter);
   padding-top: var(--vertical-space);
   padding-bottom: var(--vertical-space);
-  .post {
+  .post,
+  .back {
     max-width: var(--measure);
     margin-left: auto;
     margin-right: auto;
+  }
+  .back {
+    margin-top: var(--vertical-space);
+    a:hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -29,6 +36,9 @@ export default function BlogPost({ data }) {
       </ArticleHeader>
       <StyledArticle>
         <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="back">
+          <Link to="/blog">&larr; Back</Link>
+        </div>
       </StyledArticle>
     </>
   );
