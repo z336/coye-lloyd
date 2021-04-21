@@ -1,4 +1,5 @@
 import * as React from 'react';
+import HelmetTemplate from '../components/SEO';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Article from '../styles/ArticleContent';
@@ -20,6 +21,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <>
+      <HelmetTemplate title={post.frontmatter.title} />
       <ArticleHeader>
         <div>
           <h2>{post.frontmatter.title}</h2>

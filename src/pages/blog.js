@@ -1,4 +1,5 @@
 import * as React from 'react';
+import HelmetTemplate from '../components/SEO';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import ArticleHeader from '../styles/ArticleHeader';
@@ -21,6 +22,7 @@ export default function Blog({ data }) {
   const { posts } = data.blog;
   return (
     <>
+      <HelmetTemplate title="Blog" />
       <ArticleHeader>
         <div>
           <h2>Blog</h2>

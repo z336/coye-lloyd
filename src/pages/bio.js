@@ -1,4 +1,5 @@
 import * as React from 'react';
+import HelmetTemplate from '../components/SEO';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FaCamera } from 'react-icons/fa';
@@ -17,6 +18,7 @@ const StyledArticle = styled(Article)`
 export default function Bio() {
   return (
     <>
+      <HelmetTemplate title="Bio" />
       <ArticleHeader>
         <div>
           <h2>Bio</h2>

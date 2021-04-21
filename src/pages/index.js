@@ -1,4 +1,5 @@
 import * as React from 'react';
+import HelmetTemplate from '../components/SEO';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -34,6 +35,7 @@ const IndexGrid = styled.div`
 export default function IndexPage() {
   return (
     <>
+      <HelmetTemplate title="Home" />
       <ArticleHeader>
         <div>
           <h2>

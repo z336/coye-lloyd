@@ -1,4 +1,5 @@
 import * as React from 'react';
+import HelmetTemplate from '../components/SEO';
 import styled from 'styled-components';
 import ArticleHeader from '../styles/ArticleHeader';
 import Article from '../styles/ArticleContent';
@@ -16,6 +17,7 @@ const StyledArticle = styled(Article)`
 export default function Works() {
   return (
     <>
+      <HelmetTemplate title="Works" />
       <ArticleHeader>
         <div>
           <h2>Works</h2>
