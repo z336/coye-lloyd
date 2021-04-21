@@ -14,6 +14,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Coye Lloyd`,
+        short_name: `Coye Lloyd`,
+        start_url: `/`,
         icon: `src/images/icon.png`,
       },
     },
