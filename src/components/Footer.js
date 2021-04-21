@@ -40,6 +40,7 @@ export default function Footer() {
             href="https://www.instagram.com/fleshy_fresh/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Coye's Instagram"
           >
             <FaInstagramSquare />
           </a>
@@ -49,6 +50,7 @@ export default function Footer() {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Coye's Twitter"
           >
             <FaTwitterSquare />
           </a>
