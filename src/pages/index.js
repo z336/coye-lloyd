@@ -25,6 +25,9 @@ const IndexGrid = styled.div`
   }
   .cta {
     padding-top: var(--vertical-space);
+    a:hover {
+      opacity: 0.7;
+    }
     ul {
       list-style: none;
       border-left: 1px solid;

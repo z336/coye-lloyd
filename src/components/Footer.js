@@ -21,9 +21,6 @@ const StyledFooter = styled.footer`
       :last-child {
         padding-right: 0;
       }
-      :hover {
-        color: var(--red);
-      }
     }
   }
   p {

@@ -117,6 +117,9 @@ blockquote {
 
 a {
   color: currentColor;
+  :hover {
+    opacity: 0.7;
+  }
 }
 
 a:focus,

@@ -16,6 +16,10 @@ const StyledArticle = styled(Article)`
   a {
     text-decoration: none;
   }
+  .date {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export default function Blog({ data }) {
@@ -37,16 +41,13 @@ export default function Blog({ data }) {
             columnSize="1fr"
             gap="2rem"
           >
-            <div>
-              <h3>
-                <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-              </h3>
-              <p>
-                <Link to={post.fields.slug} tabIndex="-1">
-                  {post.excerpt}
-                </Link>
-              </p>
-            </div>
+            <Link to={post.fields.slug}>
+              <div>
+                <h3>{post.frontmatter.title}</h3>
+                <p className="date">{post.frontmatter.date}</p>
+                <p>{post.excerpt}</p>
+              </div>
+            </Link>
           </Grid>
         ))}
       </StyledArticle>
@@ -59,7 +60,7 @@ export const pageQuery = graphql`
     blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       posts: nodes {
         frontmatter {
-          date(fromNow: true)
+          date(formatString: "MMMM Do, YYYY")
           title
           author
         }
