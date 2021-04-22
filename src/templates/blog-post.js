@@ -1,9 +1,10 @@
 import * as React from 'react';
 import HelmetTemplate from '../components/SEO';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Article from '../styles/ArticleContent';
 import ArticleHeader from '../styles/ArticleHeader';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const StyledArticle = styled(Article)`
   margin-right: var(--gutter);
@@ -18,8 +19,13 @@ const StyledArticle = styled(Article)`
   }
   .back {
     margin-top: var(--vertical-space);
-    a:hover {
-      opacity: 0.7;
+    button {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      :hover {
+        opacity: 0.7;
+      }
     }
   }
 `;
@@ -37,7 +43,12 @@ export default function BlogPost({ data }) {
       <StyledArticle>
         <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
         <div className="back">
-          <Link to="/blog">&larr; Back</Link>
+          <button
+            onClick={() => window.history.back()}
+            aria-label="Go back to the blog list"
+          >
+            <FaArrowLeft /> Back
+          </button>
         </div>
       </StyledArticle>
     </>
