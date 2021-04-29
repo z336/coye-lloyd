@@ -11,6 +11,10 @@ const StyledArticle = styled(Article)`
   margin-left: var(--gutter);
   padding-top: var(--vertical-space);
   padding-bottom: var(--vertical-space);
+  ul,
+  ol {
+    margin-left: 1rem;
+  }
   .post,
   .back {
     max-width: var(--measure);

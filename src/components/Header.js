@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   }
   .site-name {
     font-family: var(--display-font);
-    font-size: var(--t5);
+    font-size: var(--t4);
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     a {

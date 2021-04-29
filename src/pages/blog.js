@@ -17,7 +17,7 @@ const StyledArticle = styled(Article)`
     text-decoration: none;
   }
   .date {
-    font-size: 0.85rem;
+    font-size: var(--t7);
     margin-top: 0.5rem;
   }
 `;

@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
     list-style: none;
     padding: 0;
     li {
-      font-size: var(--t5);
+      font-size: var(--t4);
       padding-right: 0.75rem;
       :last-child {
         padding-right: 0;
