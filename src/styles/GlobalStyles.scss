@@ -42,18 +42,6 @@
   max-width: var(--measure);
 }
 
-html {
-  --breakpoint: 900px;
-  text-rendering: optimizelegibility;
-  font-feature-settings: 'kern';
-  font-kerning: normal;
-  -webkit-font-smoothing: antialiased;
-  font-family: Inter, Helvetica, sans-serif;
-  background: rgb(255, 255, 255);
-  font-size: 1.11111vw;
-  word-break: break-word;
-}
-
 html,
 body,
 article,
@@ -62,6 +50,10 @@ header,
 nav,
 main,
 footer {
+  text-rendering: optimizelegibility;
+  font-feature-settings: 'kern';
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
   max-width: none;
 }
 
@@ -122,13 +114,13 @@ blockquote {
 a {
   color: currentColor;
   :hover {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 
 a:focus,
 button:focus {
-  outline: 2px solid;
+  outline: 8px double;
 }
 
 a:focus:not(:focus-visible),
@@ -142,4 +134,21 @@ small {
   svg {
     font-size: 0.6rem;
   }
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black) var(--light);
+}
+body::-webkit-scrollbar-track {
+  background: var(--light);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 6px;
+  border: 3px solid var(--light);
 }

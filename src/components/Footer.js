@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
+import { FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 
 const StyledFooter = styled.footer`
   grid-area: footer;
@@ -34,22 +34,22 @@ export default function Footer() {
       <ul>
         <li>
           <a
-            href="https://www.instagram.com/fleshy_fresh/"
+            href="https://www.instagram.com/koi_phish/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Coye's Instagram"
+            aria-label="Coye's Instagram account"
           >
             <FaInstagramSquare />
           </a>
         </li>
         <li>
           <a
-            href="https://twitter.com/"
+            href="https://www.linkedin.com/in/coye-lloyd-87252a21/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Coye's Twitter"
+            aria-label="Coye's LinkedIn account"
           >
-            <FaTwitterSquare />
+            <FaLinkedin />
           </a>
         </li>
       </ul>

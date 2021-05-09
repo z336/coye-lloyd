@@ -20,6 +20,10 @@ const StyledArticle = styled(Article)`
     max-width: var(--measure);
     margin-left: auto;
     margin-right: auto;
+    a:hover {
+      background-color: var(--red);
+      color: var(--light);
+    }
   }
   .back {
     margin-top: var(--vertical-space);
@@ -28,7 +32,8 @@ const StyledArticle = styled(Article)`
       border: 0;
       cursor: pointer;
       :hover {
-        opacity: 0.7;
+        background-color: var(--red);
+        color: var(--light);
       }
     }
   }

@@ -7,6 +7,13 @@ import { FaCamera } from 'react-icons/fa';
 import Article from '../styles/ArticleContent';
 import ArticleHeader from '../styles/ArticleHeader';
 
+const StyledArticleHeader = styled(ArticleHeader)`
+  font-size: var(--t5);
+  .space {
+    padding-left: 4ch;
+  }
+`;
+
 const StyledArticle = styled(Article)`
   padding-bottom: var(--vertical-space);
 `;
@@ -26,7 +33,8 @@ const IndexGrid = styled.div`
   .cta {
     padding-top: var(--vertical-space);
     a:hover {
-      opacity: 0.7;
+      background-color: var(--red);
+      color: var(--light);
     }
     ul {
       list-style: none;
@@ -39,13 +47,15 @@ export default function IndexPage() {
   return (
     <>
       <HelmetTemplate title="Home" />
-      <ArticleHeader>
+      <StyledArticleHeader>
         <div>
           <h2>
-            Big bold <br /> huge ass <br /> text
+            Para Academic <br /> <span className="space"> Film</span>
+            <br /> <span className="space"> Media</span> <br />
+            &amp; Culture
           </h2>
         </div>
-      </ArticleHeader>
+      </StyledArticleHeader>
       <StyledArticle>
         <IndexGrid>
           <div className="image">
@@ -63,11 +73,14 @@ export default function IndexPage() {
             </div>
           </div>
           <div className="cta">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              I’m a film nerd turned scholar, turned sorta drop-out, turned
+              nerd, turned back to scholarship.
+            </p>
             <ul>
-              <li>things</li>
-              <li>stuff</li>
-              <li>other things</li>
+              <li>Curation</li>
+              <li>Writing</li>
+              <li>Criticism</li>
             </ul>
             <Link to="/bio">Learn more &rarr;</Link>
           </div>

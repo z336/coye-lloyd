@@ -21,13 +21,15 @@ const Article = styled.article`
     margin-right: var(--gutter);
     margin-bottom: var(--vertical-space);
     padding: var(--gutter);
-    max-width: 70ch;
     border: 1px solid;
     :nth-child(even) {
       margin-left: 6rem;
     }
     :last-child {
       margin-bottom: 0;
+    }
+    @media (min-width: 900px) {
+      max-width: 70ch;
     }
     @media (max-width: 900px) {
       margin-left: 0;

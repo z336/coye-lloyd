@@ -14,6 +14,14 @@ const StyledArticle = styled(Article)`
   opacity: 1;
   background-image: radial-gradient(var(--black) 1px, var(--light) 1px);
   background-size: 0.75rem 0.75rem;
+  ul {
+    list-style: none;
+    border-left: 1px solid;
+    a:hover {
+      background-color: var(--red);
+      color: var(--light);
+    }
+  }
 `;
 
 export default function Contact() {
@@ -40,19 +48,36 @@ export default function Contact() {
             </small>
           </div>
           <div className="borders">
-            <h3>Please reach out</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-              voluptatibus deserunt doloremque magni consequuntur ipsam atque
-              sint, eum repellendus temporibus facere commodi quaerat fuga
-              architecto et suscipit reprehenderit impedit iste!
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-              optio sit porro, odit veritatis praesentium nisi. Eveniet quasi
-              hic nemo voluptas autem omnis, modi debitis dolores at architecto
-              placeat a.
-            </p>
+            <h3>Let's build</h3>
+            <ul>
+              <li>
+                <a
+                  href="mailto:coyelloyd@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  coyelloyd@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/koi_phish/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/coye-lloyd-87252a21/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
         </Grid>
       </StyledArticle>
