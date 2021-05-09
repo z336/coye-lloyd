@@ -113,14 +113,12 @@ blockquote {
 
 a {
   color: currentColor;
-  :hover {
-    opacity: 0.6;
-  }
 }
 
 a:focus,
 button:focus {
   outline: 8px double;
+  z-index: 10;
 }
 
 a:focus:not(:focus-visible),

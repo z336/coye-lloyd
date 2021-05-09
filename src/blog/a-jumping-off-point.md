@@ -1,9 +1,8 @@
 ---
-path: a-jumping-off-poing
-date: 2021-05-08T21:23:58.551Z
 title: A Jumping Off Point
+date: 2021-05-08T21:23:58.551Z
+preview: This post originally appeared on kankanindy.com
 ---
-*This post originally appeared [kankanindy.com](https://kankanindy.com/)*
 
 This is by no means a comprehensive list of films that encapsulates the Black experience. I personally think this list may serve as a jumping off point to help us reflect upon what we perceive as heroic, permissible or acceptable of the Black experience. This list spans a lot of different genres, includes both narrative and documentaries, and may include some surprising entries. I’ve included little blurbs for each entry because I feel the need to explain why *Die Hard with a Vengeance* deserves your attention.
 

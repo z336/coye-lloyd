@@ -21,7 +21,7 @@ const Article = styled.article`
     margin-right: var(--gutter);
     margin-bottom: var(--vertical-space);
     padding: var(--gutter);
-    border: 1px solid;
+    border: 1px solid var(--black);
     :nth-child(even) {
       margin-left: 6rem;
     }
@@ -48,9 +48,9 @@ const Article = styled.article`
   .borders {
     background-color: var(--light);
     padding: var(--gutter);
-    border-top: 1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
     :last-child {
       border-right: 0;
     }
