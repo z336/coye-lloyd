@@ -12,6 +12,7 @@ const StyledArticle = styled(Article)`
   opacity: 1;
   background-image: radial-gradient(var(--black) 1px, var(--light) 1px);
   background-size: 0.75rem 0.75rem;
+
   a {
     text-decoration: none;
     display: block;

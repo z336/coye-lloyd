@@ -32,15 +32,15 @@ const Article = styled.article`
       max-width: 70ch;
     }
     @media (max-width: 900px) {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
       padding-top: var(--vertical-space);
       padding-bottom: var(--vertical-space);
       margin-bottom: var(--vertical-space);
       border-left: 0;
       border-right: 0;
       :nth-child(even) {
-        margin-left: 0;
+        margin-left: auto;
       }
     }
   }
@@ -55,8 +55,8 @@ const Article = styled.article`
       border-right: 0;
     }
     @media (max-width: 900px) {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
       padding-top: var(--vertical-space);
       padding-bottom: var(--vertical-space);
       border-left: 0;
