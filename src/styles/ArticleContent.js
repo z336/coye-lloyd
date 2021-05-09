@@ -32,8 +32,8 @@ const Article = styled.article`
       max-width: 70ch;
     }
     @media (max-width: 900px) {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
       padding-top: var(--vertical-space);
       padding-bottom: var(--vertical-space);
       margin-bottom: var(--vertical-space);
@@ -55,8 +55,8 @@ const Article = styled.article`
       border-right: 0;
     }
     @media (max-width: 900px) {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
       padding-top: var(--vertical-space);
       padding-bottom: var(--vertical-space);
       border-left: 0;
