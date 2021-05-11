@@ -8,9 +8,30 @@ import Article from '../styles/ArticleContent';
 import ArticleHeader from '../styles/ArticleHeader';
 
 const StyledArticleHeader = styled(ArticleHeader)`
-  font-size: var(--t5);
-  .space {
-    padding-left: 4ch;
+  .ampersand {
+    font-family: var(--display-font);
+    color: black;
+    -webkit-text-fill-color: var(--light);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--black);
+  }
+
+  @media (max-width: 900px) {
+    .film {
+      padding-left: 1ch;
+    }
+    .media {
+      padding-left: 1ch;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .film {
+      padding-left: 4ch;
+    }
+    .media {
+      padding-left: 4ch;
+    }
   }
 `;
 
@@ -50,9 +71,13 @@ export default function IndexPage() {
       <StyledArticleHeader>
         <div>
           <h2>
-            Para Academic <br /> <span className="space"> Film</span>
-            <br /> <span className="space"> Media</span> <br />
-            &amp; Culture
+            Para Academic <br />
+            <span className="film"> Film</span>
+            <br />
+            <span className="media">Media</span> <br />
+            <span className="culture">
+              <span className="ampersand">&amp;</span> Culture
+            </span>
           </h2>
         </div>
       </StyledArticleHeader>
